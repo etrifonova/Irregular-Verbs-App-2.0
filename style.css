@@ -1,73 +1,7 @@
-html {
-    font-size: 16px;
-}
-
-h2 {
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 18px;
-}
-
 body {
-    background-color: #04AA6D;
-    min-height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 16px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
-
-#h2_container {
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#h3_container {
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.out-1 {
-    width: 200px;
-    height: 30px;
-    font-weight: bold;
-    background-color: white;
-    color: black;
-    padding: 10px 10px;
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 16px;
-}
-
-
-form {
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 16px;
-    border-collapse: separate;
- }
-
- #generate {
-        background-color: yellow;
-        border: none;
-        color: black;
-        padding: 10px 26px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
-        font-family: 'Helvetica', Helvetica, monospace;
-        font-size: 14px;
- }
-
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: yellow;
-    border: none;
-    color: black;
-    padding: 10px 26px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: 'Helvetica', Helvetica, monospace;
-    font-size: 14px;
-  }
