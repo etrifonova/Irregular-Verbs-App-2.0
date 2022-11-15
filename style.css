@@ -1,7 +1,81 @@
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/PTSans-Regular.woff2);
+    font-display: swap;    
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/PTSans-Bold.woff2);
+    font-display: swap;    
+}
+
 body {
-    width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: .2rem;
 }
+
+.main-area {
+    width: 700px;
+    background-color: #cacf85;
+    padding: 30px;
+
+}
+
+
+.infinitive-title {
+    margin-bottom: 50px;
+}
+
+.out-block {
+    background-color: #FFFFFF;
+    width: 120px;
+    padding: 2px;
+    text-align: center;
+}
+
+.generate {
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 150px;
+    min-height: 40px;
+    border: none;
+    background-color: #F2D0A9;
+    letter-spacing: .2rem;
+}
+
+.psimple-input {
+    background-color: #FFFFFF;
+    width: 120px;
+    padding: 2px;
+    font-family: inherit;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+}
+
+.check-button {
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 150px;
+    min-height: 40px;
+    border: none;
+    background-color: #F2D0A9;
+    letter-spacing: .2rem;
+
+}
+
+
