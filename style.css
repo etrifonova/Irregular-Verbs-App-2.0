@@ -33,6 +33,12 @@ body {
 
 }
 
+.infitive-block {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: -35px;
+}
+
 
 .infinitive-title {
     margin-bottom: 50px;
@@ -41,6 +47,8 @@ body {
 .out-block {
     background-color: #FFFFFF;
     width: 120px;
+    height: 40px;
+    margin-left: 20px;
     padding: 2px;
     text-align: center;
 }
@@ -56,9 +64,14 @@ body {
     letter-spacing: .2rem;
 }
 
+.psimple-form {
+    margin-top: 50px;
+}
+
 .psimple-input {
     background-color: #FFFFFF;
     width: 120px;
+    height: 40px;
     padding: 2px;
     font-family: inherit;
     font-size: 24px;
