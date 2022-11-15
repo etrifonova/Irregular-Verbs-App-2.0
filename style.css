@@ -23,6 +23,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 32px;
     font-weight: 700;
+    color: black;
     letter-spacing: .2rem;
 }
 
@@ -30,6 +31,7 @@ body {
     width: 700px;
     background-color: #cacf85;
     padding: 30px;
+    border-radius: 2px;
 
 }
 
@@ -66,6 +68,7 @@ body {
 
 .psimple-form {
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .psimple-input {
@@ -74,7 +77,8 @@ body {
     height: 40px;
     padding: 2px;
     font-family: inherit;
-    font-size: 24px;
+    font-size: inherit;
+    font-weight: inherit;
     text-align: center;
     border: none;
 }
@@ -88,7 +92,15 @@ body {
     border: none;
     background-color: #F2D0A9;
     letter-spacing: .2rem;
+}
 
+.result-block {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.out-2 {
+    background-color: #cacf85;
 }
 
 
