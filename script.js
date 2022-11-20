@@ -7,45 +7,51 @@ var pastParticiple = document.querySelector(pparticiple)
 if ()
 */
 
-var infinitiveDisplay = document.querySelector('.out-1');
+let infinitiveDisplay = document.querySelector('.out-1');
+let randomInfinitive;
+
 
 function geninfinitive() {
-  var infinitive=['do', 'make', 'have'];
-  const a = infinitive[Math.floor(Math.random()*infinitive.length)];
-  infinitiveDisplay.innerHTML = a;
+  let infinitiveArray=['do', 'make', 'have'];
+  randomInfinitive = infinitiveArray[Math.floor(Math.random()*infinitiveArray.length)];
+  infinitiveDisplay.innerHTML = randomInfinitive;
   }
 
-  
-function checkForms() {
-  var psimple = document.querySelector('.psimple').value;
+  let userInput = document.querySelector('.psimple-input');
+  let message = document.querySelector('.out-2');
 
-  console.log(psimple, infinitiveDisplay.value);
 
-  if (infinitiveDisplay.value == 'do') {
-    if (psimple == 'did') {
-      document.querySelector('.out-2').innerHTML = 'Correct!'
-    } else {
-      document.querySelector('.out-2').innerHTML = 'False!'
+  let verbs = [
+    {
+      infinitive: 'do',
+      psimple: 'did',
+      pparticle: 'done'
+    },
+    {
+      infinitive: 'have',
+      psimple: 'had',
+      pparticle: 'had'
+    },
+    {
+      infinitive: 'make',
+      psimple: 'made',
+      pparticle: 'made'
     }
-  }
+  ]
 
-  if (infinitiveDisplay.value == 'make') {
-    if (psimple == 'made') {
-      document.querySelector('.out-2').innerHTML = 'Correct!'
-    } else {
-      document.querySelector('.out-2').innerHTML = 'False!'
+  function checkForms() {
+    for (let i = 0; i < verbs.length; i++) {
+      if (randomInfinitive === verbs[i].infinitive) {
+        if  (userInput.value === verbs[i].psimple) {
+          message.innerHTML = 'Correct!';
+        } else {
+          message.innerHTML = 'Try again!';
+        }
+        } else {
+          message.innerHTML = 'False!';
+      }
     }
-  }
-
-  if (infinitiveDisplay.value == 'have') {
-    if (psimple == 'had') {
-      document.querySelector('.out-2').innerHTML = 'Correct!'
-    } else {
-      document.querySelector('.out-2').innerHTML = 'False!'
-    }
-  }
-  }
-
+}
   
 
 
