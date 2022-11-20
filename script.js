@@ -39,18 +39,11 @@ function geninfinitive() {
     }
   ]
 
+  // ПОРАБОТАТЬ С МЕТОДОМ FIND
+
   function checkForms() {
-    for (let i = 0; i < verbs.length; i++) {
-      if (randomInfinitive === verbs[i].infinitive) {
-        if  (userInput.value === verbs[i].psimple) {
-          message.innerHTML = 'Correct!';
-        } else {
-          message.innerHTML = 'Try again!';
-        }
-        } else {
-          message.innerHTML = 'False!';
-      }
-    }
+    let found = verbs.find(element => element.infinitive === infinitiveDisplay.value);
+    console.log(found);
 }
   
 
