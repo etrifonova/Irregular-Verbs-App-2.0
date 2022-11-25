@@ -21,23 +21,18 @@ function geninfinitive() {
   let message = document.querySelector('.out-2');
 
 
-  let verbs = [
-    {
-      infinitive: 'do',
-      psimple: 'did',
-      pparticle: 'done'
-    },
-    {
-      infinitive: 'have',
-      psimple: 'had',
-      pparticle: 'had'
-    },
-    {
-      infinitive: 'make',
-      psimple: 'made',
-      pparticle: 'made'
+  let verbs = {
+      do: ['did', 'done'],
+      have: ['had', 'had'],
+      make: ['made', 'made'],
     }
-  ]
+
+    let currentVerb = function (name) {
+      return 'Текущий глагол — ' + verbs[name];
+    };
+
+ let test = currentVerb('have')
+ console.log(test);
 
   // ПОРАБОТАТЬ С МЕТОДОМ FIND
 
