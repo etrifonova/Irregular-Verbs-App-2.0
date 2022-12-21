@@ -31,15 +31,26 @@ function geninfinitive() {
       return 'Текущий глагол — ' + verbs[name];
     };
 
- let test = currentVerb('have')
- console.log(test);
-
+console.log(currentVerb('do'))
   // ПОРАБОТАТЬ С МЕТОДОМ FIND
 
   function checkForms() {
     let found = verbs.find(element => element.infinitive === infinitiveDisplay.value);
     console.log(found);
 }
+
+console.log(checkForms());
+
+
+// let verbsList = {
+//   do: ['did', 'done'],
+//   have: ['had', 'had'],
+//   make: ['made', 'made'],
+// }
+
+// console.log(
+//   Object.entries(verbsList).map((filterItem) => filterItem[0] + " - " + filterItem[1]).join(', ')
+// );
   
 
 
