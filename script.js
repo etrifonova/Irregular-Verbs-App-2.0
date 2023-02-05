@@ -12,35 +12,53 @@ let randomInfinitive;
 
 
 function geninfinitive() {
-  let infinitiveArray=['do', 'make', 'have'];
+  let infinitiveArray=['do', 'make', 'have', 'bring', 'take', 'catch'];
   randomInfinitive = infinitiveArray[Math.floor(Math.random()*infinitiveArray.length)];
   infinitiveDisplay.innerHTML = randomInfinitive;
+
+  console.log(randomInfinitive)
   }
 
   let userInput = document.querySelector('.psimple-input');
   let message = document.querySelector('.out-2');
 
 
-  let verbs = {
-      do: ['did', 'done'],
-      have: ['had', 'had'],
-      make: ['made', 'made'],
-    }
+  let verbs = [
+    {infinitive: 'do', psimple: 'did'},
+    {infinitive: 'have', psimple: 'had'},
+    {infinitive: 'make', psimple: 'made'},
+    {infinitive: 'bring', psimple: 'brought'},
+    {infinitive: 'take', psimple: 'took'},
+    {infinitive: 'catch', psimple: 'caught'}
+  ]
 
-    let currentVerb = function (name) {
-      return 'Текущий глагол — ' + verbs[name];
-    };
+  console.log(verbs[0].infinitive);
 
-console.log(currentVerb('do'))
+  
   // ПОРАБОТАТЬ С МЕТОДОМ FIND
 
   function checkForms() {
-    let found = verbs.find(element => element.infinitive === infinitiveDisplay.value);
-    console.log(found);
+
+    let correctAnswer = verbs.find((element) => {
+      return element.infinitive == randomInfinitive
+    }).psimple;
+    
+    console.log(userInput.value);
+
+    if (userInput.value == correctAnswer) {
+      message.innerHTML = 'Correct!'
+    } else {
+      
+      message.innerHTML = 'Wrong!'
+    }
+
+    console.log(correctAnswer);
 }
 
-console.log(checkForms());
 
+// return numConverter.find((number) => {
+//   return number.arabicNum === num; 
+// }).romanNum;
 
 // let verbsList = {
 //   do: ['did', 'done'],
