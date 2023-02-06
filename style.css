@@ -15,7 +15,13 @@
     font-display: swap;    
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,83 +30,40 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: black;
+    background-color: bisque;
     letter-spacing: .2rem;
 }
 
 .main-area {
-    width: 700px;
-    background-color: #cacf85;
-    padding: 30px;
-    border-radius: 2px;
-
+    background-color: gold;
 }
 
-.infitive-block {
+.title {
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    margin-bottom: -35px;
+    grid-template-columns: 250px 1fr;
 }
 
-
-.infinitive-title {
-    margin-bottom: 50px;
-}
-
-.out-block {
-    background-color: #FFFFFF;
-    width: 120px;
-    height: 40px;
-    margin-left: 20px;
-    padding: 2px;
-    text-align: center;
-}
-
-.generate {
+.button {
+    min-width: 100px;
     font-family: inherit;
     font-weight: bold;
-    text-transform: uppercase;
-    width: 150px;
-    min-height: 40px;
-    border: none;
-    background-color: #F2D0A9;
-    letter-spacing: .2rem;
-}
-
-.psimple-form {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    text-transform: lowercase;
+    background-color: aquamarine;
+    border: solid 1px aqua;
 }
 
 .psimple-input {
-    background-color: #FFFFFF;
-    width: 120px;
-    height: 40px;
-    padding: 2px;
     font-family: inherit;
     font-size: inherit;
-    font-weight: inherit;
-    text-align: center;
-    border: none;
+    border: solid 1px gray;
+
 }
 
-.check-button {
-    font-family: inherit;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 150px;
-    min-height: 40px;
-    border: none;
-    background-color: #F2D0A9;
-    letter-spacing: .2rem;
+.psimple-form {
+    margin-top: 30px;
 }
-
-.result-block {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-}
-
-.out-2 {
-    background-color: #cacf85;
-}
-
-

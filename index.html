@@ -8,23 +8,25 @@
 <body>
 
     <section class="main-area">
-        <div class="infitive-block">
-            <div class="infinitive-title">Infinitive:</div>
+        <div class="infitive-block grid-container">
+            <div class="title">Infinitive:</div>
             <div class="out-block out-1"></div>
         </div>
-        <button class="generate" id="generate" onclick="geninfinitive();">generate</button>
+        <button class="generate button" id="generate" onclick="geninfinitive();">generate</button>
 
-        <form class="psimple-form">
+        <form class="psimple-form grid-container">
             <label for="psimple">
-                <span class="psimple-title">Past Simple:</span>
+                <span class="title">Past Simple:</span>
             </label>
-            <input class="psimple-input" type="text" id="psimple" name="psimple"><br>
+            <input class="psimple-input" type="text" id="psimple" name="psimple">
             <!-- <label for="pparticiple">Past Participle:</label><br> ->
             <input class="pparticiple" type="text" id="pparticiple" name="pparticiple"> -->
         </form>
         
-        <div class="result-block">
-            <button class="check-button" onclick="checkForms()">Check</button>
+        <div class="result-block grid-container" >
+            <div class="button-container">
+                <button class="check-button button" onclick="checkForms()">Check</button>
+            </div>
             <div class="out-block out-2"></div>
         </div>
 
