@@ -29,13 +29,14 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 32px;
     font-weight: 700;
-    color: black;
-    background-color: bisque;
+    color: white;
+    background-color: gray;
     letter-spacing: .2rem;
 }
 
 .main-area {
-    background-color: gold;
+    background-color: #282828;
+    padding: 30px;
 }
 
 .title {
@@ -50,12 +51,29 @@ body {
 
 .button {
     min-width: 100px;
+    min-height: 30px;
     font-family: inherit;
     font-weight: bold;
-    text-transform: lowercase;
-    background-color: aquamarine;
-    border: solid 1px aqua;
+    text-transform: uppercase;
+    background-color: white;
+    color: #282828;
+    border: solid 1px #282828;
+    box-shadow: 0 0 5px 0 #34495e;
 }
+
+.button:hover {
+    min-width: 100px;
+    min-height: 30px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #04aa6d;
+    color: white;
+    border: solid 1px #282828;
+    box-shadow: 0 0 5px 0 #34495e;
+}
+
+
 
 .psimple-input {
     font-family: inherit;

@@ -12,9 +12,11 @@ let randomInfinitive;
 
 
 function geninfinitive() {
-  let infinitiveArray=['do', 'make', 'have', 'bring', 'take', 'catch'];
+  let infinitiveArray=['do', 'make', 'have', 'bring', 'take', 'catch', 'build', 'become', 'buy', 'dig', 'drink'];
   randomInfinitive = infinitiveArray[Math.floor(Math.random()*infinitiveArray.length)];
   infinitiveDisplay.innerHTML = randomInfinitive;
+  message.innerHTML = '';
+  userInput.value = '';
 
   console.log(randomInfinitive)
   }
@@ -29,8 +31,14 @@ function geninfinitive() {
     {infinitive: 'make', psimple: 'made'},
     {infinitive: 'bring', psimple: 'brought'},
     {infinitive: 'take', psimple: 'took'},
-    {infinitive: 'catch', psimple: 'caught'}
+    {infinitive: 'catch', psimple: 'caught'},
+    {infinitive: 'build', psimple: 'built'},
+    {infinitive: 'become', psimple: 'became'},
+    {infinitive: 'buy', psimple: 'bought'},
+    {infinitive: 'dig', psimple: 'dug'},
+    {infinitive: 'drink', psimple: 'drank'}
   ]
+
 
   console.log(verbs[0].infinitive);
 
@@ -43,9 +51,8 @@ function geninfinitive() {
       return element.infinitive == randomInfinitive
     }).psimple;
     
-    console.log(userInput.value);
 
-    if (userInput.value == correctAnswer) {
+    if (userInput.value == correctAnswer || userInput.value == correctAnswer + ' ' || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' ') {
       message.innerHTML = 'Correct!'
     } else {
       
