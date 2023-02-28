@@ -36,7 +36,8 @@ body {
 
 .main-area {
     background-color: #282828;
-    padding: 30px;
+    padding: 50px;
+    border-radius: 5px;
 }
 
 .title {
@@ -59,6 +60,7 @@ body {
     color: #282828;
     border: solid 1px #282828;
     box-shadow: 0 0 5px 0 #34495e;
+    border-radius: 2px;
 }
 
 .button:hover {
@@ -73,12 +75,27 @@ body {
     box-shadow: 0 0 5px 0 #34495e;
 }
 
+.button:active {
+    min-width: 100px;
+    min-height: 30px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    color: #04aa6d;
+    border: solid 1px #282828;
+    box-shadow: 0 0 5px 0 #34495e;
+}
+
+   
+
 
 
 .psimple-input {
     font-family: inherit;
     font-size: inherit;
     border: solid 1px gray;
+    margin-bottom: 10px;
 
 }
 
@@ -86,7 +103,41 @@ body {
     margin-top: 30px;
 }
 
-.out-2 {
-    margin-top: 10px;
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+    .main-area {
+        background-color: red;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 }
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  @-ms-viewport {
+    width: device-width ;
+  }
+
+  @media only screen and (max-width:320px) {
+    /* CSS for screens that are 320 pixels or less will be put in this section */
+
+    .main-area {
+        background-color: red;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
