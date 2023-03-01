@@ -32,6 +32,7 @@ body {
     color: white;
     background-color: gray;
     letter-spacing: .2rem;
+    display: flex;
 }
 
 .main-area {
@@ -87,16 +88,12 @@ body {
     box-shadow: 0 0 5px 0 #34495e;
 }
 
-   
-
-
-
 .psimple-input {
     font-family: inherit;
     font-size: inherit;
     border: solid 1px gray;
     margin-bottom: 10px;
-
+    width: 200px;
 }
 
 .psimple-form {
@@ -107,37 +104,94 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
 
-    .main-area {
-        background-color: red;
-
-    }
+  .main-area {
+    width: 100px;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 0.75rem;
+  }
 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .button {
+        min-width: 50px;
+        min-height: 15px;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        color: #282828;
+        border: solid 1px #282828;
+        box-shadow: 0 0 5px 0 #34495e;
+        border-radius: 2px;
+    }
+    
+    .button:hover {
+        min-width: 50px;
+        min-height: 15px;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #04aa6d;
+        color: white;
+        border: solid 1px #282828;
+        box-shadow: 0 0 5px 0 #34495e;
+    }
+    
+    .button:active {
+        min-width: 50px;
+        min-height: 15px;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        color: #04aa6d;
+        border: solid 1px #282828;
+        box-shadow: 0 0 5px 0 #34495e;
+    }
+
+    .psimple-input {
+        width:100px;
+        height: 30px;
+    }
+
+    .out-1, .out-2, .psimple-input {
+      margin-top: 5px;
+      height: 20px;
+    }
+
+    .out-1 {
+      margin-bottom: 5px;
+    }
+}
+
+
+
+/* @media (min-width: 1200рх) {
 
 }
 
-@viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
+@media (min-width: 992px) and (max-width: 1199px) {
 
-  @-ms-viewport {
-    width: device-width ;
-  }
+}
+@media (min-width: 768px) and (max-width:991px) {
 
-  @media only screen and (max-width:320px) {
-    /* CSS for screens that are 320 pixels or less will be put in this section */
+}
 
-    .main-area {
-        background-color: red;
+@media (min-width: 480px) and (max-width: 767px) {
 
-    }
+}
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-  }
+@media (min-width: 320px) and (max-width: 479px) {
+    
+}
+
+@media (min-width: 320px) {
+
+} */
