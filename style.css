@@ -109,53 +109,57 @@ body {
 
   .main-area {
     margin: 0 auto;
-    width: 200px;
-    margin: 10px;
+    width: 250px;
     padding: 20px;
   }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-    .button {
-        min-width: 50px;
-        min-height: 15px;
-        margin: 15px 0 15px 0;
-        font-size: inherit;
-        font-family: inherit;
-        font-weight: bold;
-        text-transform: uppercase;
-        background-color: white;
-        color: #282828;
-        border: solid 1px #282828;
-        box-shadow: 0 0 5px 0 #34495e;
-        border-radius: 2px;
-    }
+  .button {
+    width: 120px;
+    min-height: 15px;
+    font-size: 1.25rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .button:hover {
+      min-width: 50px;
+      min-height: 15px;
+  }
+
+  .button:active {
+      min-width: 50px;
+      min-height: 15px;
+  }
+
+  .psimple-input {
+      width:150px;
+      height: 40px;
+      margin-top: 10px;
+      color: #282828;
+      text-shadow: 1px 1px 2px white;
+  }
+
+  .out-1 {
+    margin-top: 5px;
+    color: #04aa6d;
+    text-shadow: 1px 1px 2px white;
+  }
+
+  .out-1, .out-2 {
+    height: 50px;
+  }
     
-    .button:hover {
-        min-width: 50px;
-        min-height: 15px;
-    }
     
-    .button:active {
-        min-width: 50px;
-        min-height: 15px;
-    }
 
-    .psimple-input {
-        width:150px;
-        height: 30px;
-    }
-
-    .out-2 {
-      height: 50px;
-
-    }
+  }
 
 
-
+/* 
 @media (min-width: 1200рх) {
 
 }
@@ -177,4 +181,4 @@ body {
 
 @media (min-width: 320px) {
 
-}
+} */
