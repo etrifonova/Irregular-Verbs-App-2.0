@@ -17,8 +17,6 @@ function geninfinitive() {
   infinitiveDisplay.innerHTML = randomInfinitive;
   message.innerHTML = '';
   userInput.value = '';
-
-  console.log(randomInfinitive)
   }
 
   let userInput = document.querySelector('.psimple-input');
@@ -39,12 +37,7 @@ function geninfinitive() {
     {infinitive: 'drink', psimple: 'drank'}
   ]
 
-
-  console.log(verbs[0].infinitive);
-
   
-  // ПОРАБОТАТЬ С МЕТОДОМ FIND
-
   function checkForms() {
 
     let correctAnswer = verbs.find((element) => {
@@ -58,8 +51,6 @@ function geninfinitive() {
       
       message.innerHTML = 'Wrong!'
     }
-
-    console.log(correctAnswer);
 }
 
 // solution found here https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
@@ -74,110 +65,34 @@ psimple.addEventListener("keypress", function(event) {
   }
 });
 
-// return numConverter.find((number) => {
-//   return number.arabicNum === num; 
-// }).romanNum;
 
-// let verbsList = {
-//   do: ['did', 'done'],
-//   have: ['had', 'had'],
-//   make: ['made', 'made'],
-// }
-
-// console.log(
-//   Object.entries(verbsList).map((filterItem) => filterItem[0] + " - " + filterItem[1]).join(', ')
-// );
-  
+/* 
+{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
+{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
+{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
+{infinitive: 'bend', psimple: 'bent', pparticiple: 'bent'},
+{infinitive: 'begin', psimple: 'began', pparticiple: 'begun'},
 
 
+{infinitive: 'bet', psimple: 'bet', pparticiple: 'bet'},
 
+{infinitive: 'bid', psimple: 'bid', pparticiple: 'bid'},
 
-  // JS смотрит на предыдущий infinitiveDisplay, а не новый после нажатия generate infinitive
+{infinitive: 'bite', psimple: 'bit', pparticiple: 'bitten'},
 
-  /* 
-  const listOfInf = {
-    "do": "did",
-    "have": "had",
-    "make": "made"
-  }
+{infinitive: 'blow', psimple: 'blew', pparticiple: 'blown'},
 
-  if (infinitiveDisplay.value = listOfInf[prop]) {
-    if (psimple == listOfInf[prop][value]) {
-        document.querySelector('.out-2').innerHTML = 'Correct!';
-       } else {
-        document.querySelector('.out-2').innerHTML = 'False!';
-      }
-    console.log(listOfInf[prop])
-  } else {
-    console.log('no match');
-  }
-}
+{infinitive: 'break', psimple: 'broke', pparticiple: 'broken'},
 
-  const listOfInf = {
-    "do": "did",
-    "have": "had",
-    "make": "made"
-  }
+{infinitive: 'bring', psimple: 'brought', pparticiple: 'brought'},
 
-
+{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
+{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
+{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
+{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
+{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
+{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
+{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
+{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
+{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
 */
-
-
- 
-
-
- 
-
-
-
-
-
-
-
-/* function generateInfinitive() {
-
- if (infinitiveDisplay.value = 'do') {
-    if (psimple == 'did') {
-      document.querySelector('.out-2').innerHTML = 'Correct!'
-    } else {
-      document.querySelector('.out-2').innerHTML = 'False!'
-    }
-  }
-
-  if (infinitiveDisplay.value = 'make') {
-    if (psimple == 'made') {
-      document.querySelector('.out-2').innerHTML = 'Correct!'
-    } else {
-      document.querySelector('.out-2').innerHTML = 'False!'
-    }
-  }
-
-  if (infinitiveDisplay.value = 'have') {
-    if (psimple == 'had') {
-      document.querySelector('.out-2').innerHTML = 'Correct!'
-    } else {
-      document.querySelector('.out-2').innerHTML = 'False!'
-    }
-  }
-  }
-  */
-
-  
-
-
-
-
-
-
-  /* 
-  var arrayOfInfinitives = ["do", "make", "have"];
-  var infinitive = randomGenerator(0, arrayOfInfinitives.length - 1); 
-  var item = array[infinitive];
-  const infinitiveDisplay = document.getElementById("infinitive_id").value = infinitive;
-
-
-  
-  Put these items in an array. var array = ["Horse", "Pig", "Dog", "Cat", "Parrot", "Iguana"];
-  Generate a random number. var randInt = randomGenerator(0, array.length - 1); ( Generating random whole numbers in JavaScript in a specific range? )
-  Use the random number to get an item from the array. var item = array[randInt];
-  Use document.getElementById to get the textbox you want, and use .value = to set the textbox's value. var textbox = document.getElementById("textbox_id").value = randInt; */
