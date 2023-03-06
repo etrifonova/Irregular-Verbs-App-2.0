@@ -2,6 +2,8 @@
 
 
 Current plans for app upgrade:
+- expand the list of verbs;
+- add past participles;
 - add automatic generation of infinitives in case of correct answers;
 - put the cursor in the input field automatically after the generate button in pushed;
 - mobile version: make infinitives lighter in color.
