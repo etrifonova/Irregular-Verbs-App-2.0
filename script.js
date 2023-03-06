@@ -95,3 +95,4 @@ psimple.addEventListener("keypress", function(event) {
 {infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
 {infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
 {infinitive: 'become', psimple: 'became', pparticiple: 'become'},
+*/
