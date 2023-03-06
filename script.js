@@ -126,6 +126,34 @@ psimple.addEventListener("keypress", function(event) {
 {infinitive: 'give', psimple: 'gave', pparticiple: 'given'},
 
 
+part II:
+{infinitive: 'go', psimple: 'went', pparticiple: 'gone'},{infinitive: 'grow', psimple: 'grew', pparticiple: 'grown'},
+{infinitive: 'hang', psimple: 'hung', pparticiple: 'hung'},
+{infinitive: 'have', psimple: 'had', pparticiple: 'had'},
+{infinitive: 'hear', psimple: 'heard', pparticiple: 'heard'},
+{infinitive: 'hide', psimple: 'hid', pparticiple: 'hidden'},
+{infinitive: 'hit', psimple: 'hit', pparticiple: 'hit'},
+{infinitive: 'hold', psimple: 'held', pparticiple: 'held'},
+{infinitive: 'hurt', psimple: 'hurt', pparticiple: 'hurt'},
+{infinitive: 'keep', psimple: 'kept', pparticiple: 'kept'},
+{infinitive: 'know', psimple: 'knew', pparticiple: 'known'},{infinitive: 'lay', psimple: 'laid', pparticiple: 'laid'},
+{infinitive: 'lead', psimple: 'led', pparticiple: 'led'},
+{infinitive: 'learn', psimple: 'learnt', pparticiple: 'learnt'},
+{infinitive: 'leave', psimple: 'left', pparticiple: 'left'},
 
+{infinitive: 'lend', psimple: 'lent', pparticiple: 'lent'},
+{infinitive: 'let', psimple: 'let', pparticiple: 'let'},
+{infinitive: 'lie', psimple: 'lay', pparticiple: 'lain'},
+{infinitive: 'lose', psimple: 'lost', pparticiple: 'lost'},
+{infinitive: 'make', psimple: 'made', pparticiple: 'made'},
+{infinitive: 'mean', psimple: 'meant', pparticiple: 'meant'},
+{infinitive: 'meet', psimple: 'met', pparticiple: 'met'},
+{infinitive: 'pay', psimple: 'paid', pparticiple: 'paid'},{infinitive: 'put', psimple: 'put', pparticiple: 'put'},
+{infinitive: 'read', psimple: 'read', pparticiple: 'read'},
+{infinitive: 'ride', psimple: 'rode', pparticiple: 'ridden'},
+{infinitive: 'ring', psimple: 'rang', pparticiple: 'rung'},
+{infinitive: 'rise', psimple: 'rose', pparticiple: 'risen'},
+{infinitive: 'run', psimple: 'run', pparticiple: 'run'},
+{infinitive: 'say', psimple: 'said', pparticiple: 'said'},
 
 */
