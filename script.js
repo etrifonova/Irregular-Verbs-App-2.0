@@ -12,7 +12,7 @@ let randomInfinitive;
 
 
 function geninfinitive() {
-  let infinitiveArray=['do', 'make', 'have', 'bring', 'take', 'catch', 'build', 'become', 'buy', 'dig', 'drink'];
+  let infinitiveArray=["awake", "beat", "become", "begin", "bend", "bet", "bid", "bite", "blow", "break", "bring", "broadcast", "build", "burn", "buy", "catch", "choose", "come", "cost", "cut", "dig", "do", "draw", "dream", "drive", "drink", "eat", "fall", "feel", "fight", "find", "fly", "forget", "forgive", "freeze", "get", "give"];
   randomInfinitive = infinitiveArray[Math.floor(Math.random()*infinitiveArray.length)];
   infinitiveDisplay.innerHTML = randomInfinitive;
   message.innerHTML = '';
@@ -24,17 +24,41 @@ function geninfinitive() {
 
 
   let verbs = [
-    {infinitive: 'do', psimple: 'did'},
-    {infinitive: 'have', psimple: 'had'},
-    {infinitive: 'make', psimple: 'made'},
-    {infinitive: 'bring', psimple: 'brought'},
-    {infinitive: 'take', psimple: 'took'},
-    {infinitive: 'catch', psimple: 'caught'},
-    {infinitive: 'build', psimple: 'built'},
-    {infinitive: 'become', psimple: 'became'},
-    {infinitive: 'buy', psimple: 'bought'},
-    {infinitive: 'dig', psimple: 'dug'},
-    {infinitive: 'drink', psimple: 'drank'}
+    {infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
+    {infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
+    {infinitive: 'become', psimple: 'became', pparticiple: 'become'},
+    {infinitive: 'bend', psimple: 'bent', pparticiple: 'bent'},
+    {infinitive: 'begin', psimple: 'began', pparticiple: 'begun'},
+    {infinitive: 'bet', psimple: 'bet', pparticiple: 'bet'},
+    {infinitive: 'bid', psimple: 'bid', pparticiple: 'bid'},
+    {infinitive: 'bite', psimple: 'bit', pparticiple: 'bitten'},
+    {infinitive: 'blow', psimple: 'blew', pparticiple: 'blown'},
+    {infinitive: 'break', psimple: 'broke', pparticiple: 'broken'},
+    {infinitive: 'bring', psimple: 'brought', pparticiple: 'brought'},
+    {infinitive: 'broadcast', psimple: 'broadcast', pparticiple: 'broadcast'},
+    {infinitive: 'build', psimple: 'built', pparticiple: 'built'},
+    {infinitive: 'burn', psimple: 'burnt', pparticiple: 'burnt'},
+    {infinitive: 'catch', psimple: 'caught', pparticiple: 'caught'},
+    {infinitive: 'choose', psimple: 'chose', pparticiple: 'chosen'},
+    {infinitive: 'come', psimple: 'came', pparticiple: 'come'},{infinitive: 'cost', psimple: 'cost', pparticiple: 'cost'},
+    {infinitive: 'cut', psimple: 'cut', pparticiple: 'cut'},
+    {infinitive: 'dig', psimple: 'dug', pparticiple: 'dug'},
+    {infinitive: 'do', psimple: 'did', pparticiple: 'done'},
+    {infinitive: 'draw', psimple: 'drew', pparticiple: 'drawn'},
+    {infinitive: 'dream', psimple: 'dreamt', pparticiple: 'dreamt'},
+    {infinitive: 'drive', psimple: 'drove', pparticiple: 'driven'},
+    {infinitive: 'eat', psimple: 'ate', pparticiple: 'eaten'},
+    {infinitive: 'fall', psimple: 'fell', pparticiple: 'fallen'},
+    {infinitive: 'feel', psimple: 'felt', pparticiple: 'felt'},
+    {infinitive: 'fight', psimple: 'fought', pparticiple: 'fought'},
+    {infinitive: 'find', psimple: 'found', pparticiple: 'found'},
+    {infinitive: 'fly', psimple: 'flew', pparticiple: 'flown'},
+    {infinitive: 'forget', psimple: 'forgot', pparticiple: 'forgotten'},
+    {infinitive: 'forgive', psimple: 'forgave', pparticiple: 'forgiven'},
+    {infinitive: 'freeze', psimple: 'froze', pparticiple: 'frozen'},
+    {infinitive: 'get', psimple: 'got', pparticiple: 'got'},
+    {infinitive: 'give', psimple: 'gave', pparticiple: 'given'}
+    
   ]
 
   
@@ -46,10 +70,9 @@ function geninfinitive() {
     
 
     if (userInput.value == correctAnswer || userInput.value == correctAnswer + ' ' || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' ') {
-      message.innerHTML = 'Correct!'
+      message.innerHTML = 'Correct!';
     } else {
-      
-      message.innerHTML = 'Wrong!'
+        message.innerHTML = 'Wrong!'
     }
 }
 
@@ -72,27 +95,37 @@ psimple.addEventListener("keypress", function(event) {
 {infinitive: 'become', psimple: 'became', pparticiple: 'become'},
 {infinitive: 'bend', psimple: 'bent', pparticiple: 'bent'},
 {infinitive: 'begin', psimple: 'began', pparticiple: 'begun'},
-
-
 {infinitive: 'bet', psimple: 'bet', pparticiple: 'bet'},
-
 {infinitive: 'bid', psimple: 'bid', pparticiple: 'bid'},
-
 {infinitive: 'bite', psimple: 'bit', pparticiple: 'bitten'},
-
 {infinitive: 'blow', psimple: 'blew', pparticiple: 'blown'},
-
 {infinitive: 'break', psimple: 'broke', pparticiple: 'broken'},
-
 {infinitive: 'bring', psimple: 'brought', pparticiple: 'brought'},
+{infinitive: 'broadcast', psimple: 'broadcast', pparticiple: 'broadcast'},
+{infinitive: 'build', psimple: 'built', pparticiple: 'built'},
+{infinitive: 'burn', psimple: 'burnt', pparticiple: 'burnt'},
+{infinitive: 'catch', psimple: 'caught', pparticiple: 'caught'},
+{infinitive: 'choose', psimple: 'chose', pparticiple: 'chosen'},
+{infinitive: 'come', psimple: 'came', pparticiple: 'come'},{infinitive: 'cost', psimple: 'cost', pparticiple: 'cost'},
+{infinitive: 'cut', psimple: 'cut', pparticiple: 'cut'},
+{infinitive: 'dig', psimple: 'dug', pparticiple: 'dug'},
+{infinitive: 'do', psimple: 'did', pparticiple: 'done'},
+{infinitive: 'draw', psimple: 'drew', pparticiple: 'drawn'},
+{infinitive: 'dream', psimple: 'dreamt', pparticiple: 'dreamt'},
+{infinitive: 'drive', psimple: 'drove', pparticiple: 'driven'},
+{infinitive: 'eat', psimple: 'ate', pparticiple: 'eaten'},
+{infinitive: 'fall', psimple: 'fell', pparticiple: 'fallen'},
+{infinitive: 'feel', psimple: 'felt', pparticiple: 'felt'},
+{infinitive: 'fight', psimple: 'fought', pparticiple: 'fought'},
+{infinitive: 'find', psimple: 'found', pparticiple: 'found'},
+{infinitive: 'fly', psimple: 'flew', pparticiple: 'flown'},
+{infinitive: 'forget', psimple: 'forgot', pparticiple: 'forgotten'},
+{infinitive: 'forgive', psimple: 'forgave', pparticiple: 'forgiven'},
+{infinitive: 'freeze', psimple: 'froze', pparticiple: 'frozen'},
+{infinitive: 'get', psimple: 'got', pparticiple: 'got'},
+{infinitive: 'give', psimple: 'gave', pparticiple: 'given'},
 
-{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
-{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
-{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
-{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
-{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
-{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
-{infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
-{infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
-{infinitive: 'become', psimple: 'became', pparticiple: 'become'},
+
+
+
 */
