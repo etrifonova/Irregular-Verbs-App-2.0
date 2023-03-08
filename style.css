@@ -64,34 +64,20 @@ body {
     color: #282828;
     border: solid 1px #282828;
     box-shadow: 0 0 5px 0 #34495e;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .button:hover {
-    min-width: 100px;
-    min-height: 30px;
-    font-family: inherit;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #04aa6d;
-    color: white;
-    border: solid 1px #282828;
-    box-shadow: 0 0 5px 0 #34495e;
+  background-color: #04aa6d;
+  color: white;
 }
 
 .button:active {
-    min-width: 100px;
-    min-height: 30px;
-    font-family: inherit;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: white;
-    color: #04aa6d;
-    border: solid 1px #282828;
-    box-shadow: 0 0 5px 0 #34495e;
+  background-color: white;
+  color: #04aa6d;
 }
 
-.psimple-input {
+.input-field {
     font-family: inherit;
     font-size: inherit;
     border: solid 1px gray;
