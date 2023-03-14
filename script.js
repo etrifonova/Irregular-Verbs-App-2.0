@@ -123,7 +123,6 @@ function geninfinitive() {
     
 // || userInput.value == correctAnswer + ' ' || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' '
 
-// ПОДУМАТЬ, КАК ПРОПИСАТЬ ДОП УСЛОВИЯ ВЫШЕ. ВАРИАНТЫ: РЕГУЛЯРКИ ИЛИ ТЕРНАРНЫЙ ОПЕРАТОР
 
     if (userInput.value.trim().toLowerCase() === correctAnswer 
     // || userInput.value === correctAnswer + ' ' || userInput.value === correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value === correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' '
