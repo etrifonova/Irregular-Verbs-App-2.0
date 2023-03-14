@@ -123,8 +123,14 @@ function geninfinitive() {
     
 // || userInput.value == correctAnswer + ' ' || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value == correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' '
 
-    if (userInput.value === correctAnswer || userInput.value === correctAnswer + ' ' || userInput.value === correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value === correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' ') {
-      if (userInput2.value === correctAnswer2 || userInput2.value === correctAnswer2 + ' ' || userInput2.value === correctAnswer2.charAt(0).toUpperCase()+correctAnswer2.split('').splice(1, correctAnswer2.length).join('') || userInput2.value === correctAnswer2.charAt(0).toUpperCase()+correctAnswer2.split('').splice(1, correctAnswer2.length).join('') + ' ') {
+
+    if (userInput.value.trim().toLowerCase() === correctAnswer 
+    // || userInput.value === correctAnswer + ' ' || userInput.value === correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') || userInput.value === correctAnswer.charAt(0).toUpperCase()+correctAnswer.split('').splice(1, correctAnswer.length).join('') + ' '
+    ) {
+      if (userInput2.value.trim().toLowerCase() === correctAnswer2 
+        // || userInput2.value === correctAnswer2 + ' ' || userInput2.value === correctAnswer2.charAt(0).toUpperCase()+correctAnswer2.split('').splice(1, correctAnswer2.length).join('') || userInput2.value === correctAnswer2.charAt(0).toUpperCase()+correctAnswer2.split('').splice(1, correctAnswer2.length).join('') + ' '
+        
+        ) {
         message.innerHTML = 'Correct!';
       } else {
         message.innerHTML = 'Wrong!'}

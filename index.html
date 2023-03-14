@@ -1,82 +1,40 @@
 <!DOCTYPE html>
-<html lang=en charset="UTF-8">
+<html lang="en">
 <head>
-<title>Irregular Verbs Exerciser</title>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irregular Verbs Exerciser</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <section class="main-area">
-        <div class="infitive-block grid-container">
-            <div class="title">Infinitive:</div>
-            <div class="out-block out-1"></div>
-        </div>
-        <button class="generate button" id="generate" onclick="geninfinitive();">generate</button>
+  <section class="main-area">
+    <div class="infitive-block grid-container">
+        <div class="title">Infinitive:</div>
+        <div class="out-block out-1"></div>
+    </div>
+    <button class="generate button" id="generate" onclick="geninfinitive();">generate</button>
 
-        <form class="psimple-form grid-container">
-            <label for="psimple">
-                <span class="title">Past Simple:</span>
-            </label>
-            <input class="input-field psimple-input" type="text" id="psimple" name="psimple">
-            
-            <label for="pparticiple">
-              <span class="title">Past Participle:</span>
-          </label>
-          <input class="input-field pparticiple-input" type="text" id="pparticiple" name="pparticiple">
-
-        </form>
-
-        <!-- <form class="pparticiple-form grid-container">
-            <label for="pparticiple">
-                <span class="title">Past Participle:</span>
-            </label>
-            <input class="input-field pparticiple-input" type="text" id="pparticiple" name="pparticiple">
-        </form> -->
-        
-        <div class="result-block grid-container" >
-            <div class="button-container">
-                <button class="check-button button" onclick="checkForms()">Check</button>
-            </div>
-            <div class="out-block out-2"></div>
-        </div>
-
+    <form class="psimple-form grid-container">
+      <label for="psimple">
+        <span class="title">Past Simple:</span>
+      </label>
+      <input class="input-field psimple-input" type="text" id="psimple" name="psimple">
+      <label for="pparticiple">
+        <span class="title">Past Participle:</span>
+      </label>
+      <input class="input-field pparticiple-input" type="text" id="pparticiple" name="pparticiple">
+    </form>
+      
+    <div class="result-block grid-container" >
+      <div class="button-container">
+        <button class="check-button button" onclick="checkForms()">Check</button>
+      </div>
+      <div class="out-block out-2"></div>
+      </div>
     </section>
-          
-                  
+  </body>
 
-</body>
-
-<script src="script.js"></script>
-
-
+  <script src="script.js"></script>
 </html>
-
-
-  
-  <!-- 
-
-                <script>
-                function geninfinitive() {
-                var infinitive=['do', 'make', 'have', 'buy', 'come'];
-                var para=document.querySelector('p');
-                para.innerHTML=infinitive[Math.floor(Math.random()*infinitive.length)];
-                }
-            </script>
-
-    <table border="1px">
-               
-                    <tr>
-                        <th>infinitive</th>
-                        <th>past simple</th>
-                        <th>past participle</th>
-                    </tr>
-
-                    <tr>
-                        <th>verb from list</th>
-                        <th class="input">input field</th>
-                        <th class="input">input field</th>
-                    </tr>
-            </table>
-        -->
