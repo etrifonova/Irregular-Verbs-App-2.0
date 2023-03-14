@@ -122,7 +122,7 @@ body {
       min-height: 15px;
   }
 
-  .psimple-input {
+  .psimple-input, .pparticiple-input {
       width:150px;
       height: 40px;
       margin-top: 10px;
@@ -133,7 +133,8 @@ body {
 
   .out-1 {
     margin-top: 5px;
-    color: #04aa6d;
+    color: lightgreen;
+    /* #04aa6d */
     text-shadow: 1px 1px 2px white;
   }
 
