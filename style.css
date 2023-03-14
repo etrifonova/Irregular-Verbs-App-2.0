@@ -108,7 +108,6 @@ body {
   .button {
     width: 120px;
     min-height: 15px;
-    font-size: 1.25rem;
     padding: 10px;
     text-align: center;
   }
@@ -124,7 +123,7 @@ body {
   }
 
   .psimple-input, .pparticiple-input {
-      width:150px;
+      width:165px;
       height: 40px;
       margin-top: 10px;
       margin-left: 1px;
