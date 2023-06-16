@@ -4,7 +4,7 @@ let randomInfinitive;
 
 
 function geninfinitive() {
-  let infinitiveArray=["awake", "beat", "become", "begin", "bend", "bet", "bid", "bite", "blow", "break", "bring", "broadcast", "build", "burn", "buy", "catch", "choose", "come", "cost", "cut", "dig", "do", "draw", "dream", "drive", "drink", "eat", "fall", "feel", "fight", "find", "fly", "forget", "forgive", "freeze", "get", "give", "go", "grow", "hang", "have", "hear", "hide", "hit", "hold", "hurt", "keep", "know", "lay", "lead", "learn", "leave", "lend", "let", "lie", "lose", "make", "mean", "meet", "pay", "put", "read", "ride", "ring", "rise", "run", "say", "see", "sell", "send", "show", "shut", "sing", "sink", "sit", "sleep", "speak", "spend", "stand", "stink", "swim", "take", "teach", "tear", "tell", "think", "throw", "understand", "wake", "wear", "win", "write"];
+  let infinitiveArray=["awake", "be", "bear", "beat", "become", "begin", "bend", "bet", "bid", "bite", "bleed", "blow", "break", "bring", "broadcast", "build", "burn", "burst", "buy", "catch", "choose", "come", "cost", "cut", "dig", "do", "draw", "dream", "drive", "drink", "eat", "fall", "feel", "fight", "find", "flee", "fly", "forbid", "forget", "forgive", "freeze", "get", "give", "go", "grind", "grow", "hang", "have", "hear", "hide", "hit", "hold", "hurt", "keep", "know", "lay", "lead", "learn", "leave", "lend", "let", "lie", "lose", "make", "mean", "meet", "pay", "put", "read", "ride", "ring", "rise", "run", "say", "see", "sell", "send", "show", "shut", "sing", "sink", "sit", "sleep", "speak", "spend", "stand", "stink", "swim", "take", "teach", "tear", "tell", "think", "throw", "understand", "wake", "wear", "win", "write"];
   randomInfinitive = infinitiveArray[Math.floor(Math.random()*infinitiveArray.length)];
   infinitiveDisplay.innerHTML = randomInfinitive;
   message.innerHTML = '';
@@ -19,6 +19,8 @@ function geninfinitive() {
 
   let verbs = [
     {infinitive: 'awake', psimple: 'awoke', pparticiple: 'awoken'},
+    {infinitive: 'be', psimple: 'was/were', pparticiple: 'been'},
+    {infinitive: 'bear', psimple: 'bore', pparticiple: 'born'},
     {infinitive: 'beat', psimple: 'beat', pparticiple: 'beaten'},
     {infinitive: 'become', psimple: 'became', pparticiple: 'become'},
     {infinitive: 'bend', psimple: 'bent', pparticiple: 'bent'},
@@ -26,12 +28,14 @@ function geninfinitive() {
     {infinitive: 'bet', psimple: 'bet', pparticiple: 'bet'},
     {infinitive: 'bid', psimple: 'bid', pparticiple: 'bid'},
     {infinitive: 'bite', psimple: 'bit', pparticiple: 'bitten'},
+    {infinitive: 'bleed', psimple: 'bled', pparticiple: 'bled'},
     {infinitive: 'blow', psimple: 'blew', pparticiple: 'blown'},
     {infinitive: 'break', psimple: 'broke', pparticiple: 'broken'},
     {infinitive: 'bring', psimple: 'brought', pparticiple: 'brought'},
     {infinitive: 'broadcast', psimple: 'broadcast', pparticiple: 'broadcast'},
     {infinitive: 'build', psimple: 'built', pparticiple: 'built'},
     {infinitive: 'burn', psimple: 'burnt', pparticiple: 'burnt'},
+    {infinitive: 'burst', psimple: 'burst', pparticiple: 'burst'},
     {infinitive: 'catch', psimple: 'caught', pparticiple: 'caught'},
     {infinitive: 'choose', psimple: 'chose', pparticiple: 'chosen'},
     {infinitive: 'come', psimple: 'came', pparticiple: 'come'},
@@ -47,13 +51,16 @@ function geninfinitive() {
     {infinitive: 'feel', psimple: 'felt', pparticiple: 'felt'},
     {infinitive: 'fight', psimple: 'fought', pparticiple: 'fought'},
     {infinitive: 'find', psimple: 'found', pparticiple: 'found'},
+    {infinitive: 'flee', psimple: 'fled', pparticiple: 'fled'},
     {infinitive: 'fly', psimple: 'flew', pparticiple: 'flown'},
+    {infinitive: 'forbid', psimple: 'forbade', pparticiple: 'forbidden'},
     {infinitive: 'forget', psimple: 'forgot', pparticiple: 'forgotten'},
     {infinitive: 'forgive', psimple: 'forgave', pparticiple: 'forgiven'},
     {infinitive: 'freeze', psimple: 'froze', pparticiple: 'frozen'},
     {infinitive: 'get', psimple: 'got', pparticiple: 'got'},
     {infinitive: 'give', psimple: 'gave', pparticiple: 'given'},
     {infinitive: 'go', psimple: 'went', pparticiple: 'gone'},
+    {infinitive: 'grind', psimple: 'ground', pparticiple: 'ground'},
     {infinitive: 'grow', psimple: 'grew', pparticiple: 'grown'},
     {infinitive: 'hang', psimple: 'hung', pparticiple: 'hung'},
     {infinitive: 'have', psimple: 'had', pparticiple: 'had'},
