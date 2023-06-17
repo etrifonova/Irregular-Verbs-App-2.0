@@ -4,7 +4,7 @@ let randomInfinitive;
 
 
 function geninfinitive() {
-  let infinitiveArray=["awake", "be", "bear", "beat", "become", "begin", "bend", "bet", "bid", "bite", "bleed", "blow", "break", "bring", "broadcast", "build", "burn", "burst", "buy", "catch", "choose", "come", "cost", "cut", "dig", "do", "draw", "dream", "drive", "drink", "eat", "fall", "feel", "fight", "find", "flee", "fly", "forbid", "forget", "forgive", "freeze", "get", "give", "go", "grind", "grow", "hang", "have", "hear", "hide", "hit", "hold", "hurt", "keep", "know", "lay", "lead", "learn", "leave", "lend", "let", "lie", "lose", "make", "mean", "meet", "pay", "put", "read", "ride", "ring", "rise", "run", "say", "see", "sell", "send", "show", "shut", "sing", "sink", "sit", "sleep", "speak", "spend", "stand", "stink", "swim", "take", "teach", "tear", "tell", "think", "throw", "understand", "wake", "wear", "win", "write"];
+  let infinitiveArray=["be", "bear", "beat", "become", "begin", "bend", "bet", "bid", "bite", "bleed", "blow", "break", "bring", "broadcast", "build", "burn", "burst", "buy", "catch", "choose", "come", "cost", "cut", "dig", "do", "draw", "dream", "drive", "drink", "eat", "fall", "feel", "fight", "find", "flee", "fly", "forbid", "forget", "forgive", "freeze", "get", "give", "go", "grind", "grow", "hang", "have", "hear", "hide", "hit", "hold", "hurt", "keep", "know", "lay", "lead", "learn", "leave", "lend", "let", "lie", "lose", "make", "mean", "meet", "pay", "put", "read", "ride", "ring", "rise", "run", "say", "see", "sell", "send", "shake", "show", "shut", "sing", "sink", "sit", "sleep", "speak", "spend", "stand", "stink", "swim", "take", "teach", "tear", "tell", "think", "throw", "understand", "wake", "wear", "win", "write"];
   randomInfinitive = infinitiveArray[Math.floor(Math.random()*infinitiveArray.length)];
   infinitiveDisplay.innerHTML = randomInfinitive;
   message.innerHTML = '';
@@ -98,6 +98,7 @@ function geninfinitive() {
     {infinitive: 'sing', psimple: 'sang', pparticiple: 'sung'},
     {infinitive: 'sink', psimple: 'sank', pparticiple: 'sunk'},
     {infinitive: 'sit', psimple: 'sat', pparticiple: 'sat'},
+    {infinitive: 'shake', psimple: 'shook', pparticiple: 'shaken'},
     {infinitive: 'sleep', psimple: 'slept', pparticiple: 'slept'},
     {infinitive: 'speak', psimple: 'spoke', pparticiple: 'spoken'},
     {infinitive: 'spend', psimple: 'spent', pparticiple: 'spent'},
