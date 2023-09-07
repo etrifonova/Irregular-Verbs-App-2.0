@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Irregular Verbs Exerciser</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <script src="./verbs.js" type="module"></script>
+  <script src="./script.module.js" type="module"></script>
 </head>
 
 <body>
@@ -14,27 +17,27 @@
         <div class="title">Infinitive:</div>
         <div class="out-block out-1"></div>
     </div>
-    <button class="generate button" id="generate" onclick="geninfinitive();">generate</button>
+    <button class="generate button" id="generate">generate</button>
 
     <form class="psimple-form grid-container">
       <label for="psimple">
         <span class="title">Past Simple:</span>
       </label>
-      <input class="input-field psimple-input" type="text" id="psimple" name="psimple">
+      <input class="input-field psimple-input" type="text" id="psimple" name="psimple" autocomplete="off">
       <label for="pparticiple">
         <span class="title">Past Participle:</span>
       </label>
-      <input class="input-field pparticiple-input" type="text" id="pparticiple" name="pparticiple">
+      <input class="input-field pparticiple-input" type="text" id="pparticiple" name="pparticiple" autocomplete="off">
     </form>
       
     <div class="result-block grid-container" >
       <div class="button-container">
-        <button class="check-button button" onclick="checkForms()">Check</button>
+        <button class="check-button button">Check</button>
       </div>
       <div class="out-block out-2"></div>
       </div>
     </section>
   </body>
 
-  <script src="script.js"></script>
+
 </html>
