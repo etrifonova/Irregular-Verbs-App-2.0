@@ -60,16 +60,17 @@ body {
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: white;
-    color: #282828;
-    border: solid 1px #282828;
-    box-shadow: 0 0 5px 0 #34495e;
+    background-color: #04aa6d;
+    color: white;
+    border: solid 1px #04aa6d;
+    /* box-shadow: 0 0 5px 0 white; */
     border-radius: 5px;
 }
 
 .button:hover {
-  background-color: #04aa6d;
-  color: white;
+  background-color: white;
+  color: #282828;
+  border: none;
 }
 
 .button:active {
@@ -134,18 +135,25 @@ body {
 
   .out-1 {
     margin-top: 5px;
-    color: lightgreen;
     /* #04aa6d */
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 2px 1px 1px white;
   }
 
   .out-1, .out-2 {
     height: 50px;
   }
-  
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    font-size: 1.25rem;
+  }
   .out-2 {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: -10px;
+    font-size: 1.25rem;
   }
   }
 
