@@ -70,7 +70,7 @@ body {
 .button:hover {
   background-color: white;
   color: #282828;
-  border: none;
+  border: solid 1px white;
 }
 
 .button:active {
@@ -136,7 +136,8 @@ body {
   .out-1 {
     margin-top: 5px;
     /* #04aa6d */
-    text-shadow: 2px 1px 1px white;
+    color: #04aa6d;
+    text-shadow: 1px 1px 2px white;
   }
 
   .out-1, .out-2 {
