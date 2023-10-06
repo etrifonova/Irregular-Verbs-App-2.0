@@ -1,4 +1,4 @@
-import { verbs as verbs } from "../verbs.js";
+import { verbs as verbs } from "./verbs.js";
 
 let infinitiveDisplay = document.querySelector(".out-1");
 let randomInfinitive;
