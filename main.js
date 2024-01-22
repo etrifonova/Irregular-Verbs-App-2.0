@@ -1,13 +1,35 @@
-import { verbs as verbs } from "./verbs.js";
+import { BASIC_VERBS as BASIC_VERBS } from "./verbs.js";
+import { INTERMEDIATE_VERBS as INTERMEDIATE_VERBS } from "./verbs.js";
 
+let verbs;
 let infinitiveDisplay = document.querySelector(".out-1");
 let randomInfinitive;
 const buttonGen = document.querySelector(".generate");
 const buttonCheck = document.querySelector(".check-button");
+const select = document.querySelector(".select");
+const buttonShow = document.querySelector(".show-button");
 let userInput = document.querySelector(".psimple-input");
 let userInput2 = document.querySelector(".pparticiple-input");
 let message = document.querySelector(".out-2");
+let showBlock = document.querySelector(".show-answer-block-result");
 
+select.onchange = function () {
+  let x = formid.ddlselect[formid.ddlselect.selectedIndex].value;
+  document.getElementById('lblmess').innerHTML=("выбранная категория: " + formid.ddlselect[formid.ddlselect.selectedIndex].text);
+  console.log(x);
+  switch(x) {
+    case 'part1':
+      verbs = BASIC_VERBS;
+      break;
+  
+    case 'part2':
+      verbs = INTERMEDIATE_VERBS;
+      break;
+  
+    default:
+      verbs = BASIC_VERBS;
+  }
+}
 // Generate random infinitive
 buttonGen.onclick = function () {
   randomInfinitive = verbs.map((element) => element.infinitive)[
@@ -18,6 +40,11 @@ buttonGen.onclick = function () {
   userInput.value = "";
   userInput2.value = "";
 };
+
+  // Show Answer Function
+  // buttonShow.onclick = function() {
+  //   showBlock.innerHTML = correctAnswer;
+  // }
 
 // Check forms entered by user
 buttonCheck.onclick = function () {

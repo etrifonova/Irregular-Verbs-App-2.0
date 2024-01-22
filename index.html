@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irregular Verbs Exerciser</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irregular Verbs Exerciser</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  </head>
 
-<body>
-
-  <section class="main-area">
-    <div class="grid-container">
+  <body>
+    <section class="main-area">
+      <div class="select-block">
+        <div class="select-block-item">
+          <form name="formid">
+            <select class="select" name="ddlselect">
+              <option value=""></option>
+              <option value="part1">basic</option>
+              <option value="part2">intermediate</option>
+            </select>
+          </form>
+        </div>
+        <div>
+          <label id="lblmess">выбранная категория:</label>
+        </div>
+      </div>
+      <div class="grid-container">
         <div class="title">Infinitive:</div>
         <div class="out-block out-1"></div>
-    </div>
-    <button class="generate button" id="generate">generate</button>
+      </div>
+      <button class="generate button" id="generate">generate</button>
 
-    <form class="psimple-form grid-container">
-      <label for="psimple">
-        <span class="title">Past Simple:</span>
-      </label>
-      <input class="input-field psimple-input" type="text" id="psimple" name="psimple" autocomplete="off">
-      <label for="pparticiple">
-        <span class="title">Past Participle:</span>
-      </label>
-      <input class="input-field pparticiple-input" type="text" id="pparticiple" name="pparticiple" autocomplete="off">
-    </form>
-      
-    <div class="result-block grid-container" >
-      <div class="button-container">
-        <button class="check-button button">Check</button>
+      <form class="psimple-form grid-container">
+        <label for="psimple">
+          <div class="title">Past Simple:</div>
+        </label>
+        <input
+          class="input-field psimple-input"
+          type="text"
+          id="psimple"
+          name="psimple"
+          autocomplete="off"
+        />
+        <label for="pparticiple">
+          <div class="title">Past Participle:</div>
+        </label>
+        <input
+          class="input-field pparticiple-input"
+          type="text"
+          id="pparticiple"
+          name="pparticiple"
+          autocomplete="off"
+        />
+      </form>
+
+      <div class="result-block grid-container">
+        <div class="button-container">
+          <button class="check-button button">Check</button>
+        </div>
+        <div class="out-block out-2"></div>
       </div>
-      <div class="out-block out-2"></div>
-      </div>
+
+      <!-- <div class="bottom-block-item show-answer-block">
+        <button
+          class="show-button button bottom-block-item-title"
+        >
+          Показать
+        </button>
+        <div class="show-answer-block-result"></div>
+      </div> -->
     </section>
   </body>
   <script src="./verbs.js" type="module"></script>
   <script src="./main.js" type="module"></script>
-
-
 </html>
