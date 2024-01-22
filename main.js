@@ -3,6 +3,7 @@ import { INTERMEDIATE_VERBS as INTERMEDIATE_VERBS } from "./verbs.js";
 
 let verbs;
 let infinitiveDisplay = document.querySelector(".out-1");
+let randomElement;
 let randomInfinitive;
 const buttonGen = document.querySelector(".generate");
 const buttonCheck = document.querySelector(".check-button");
@@ -32,14 +33,26 @@ select.onchange = function () {
 }
 // Generate random infinitive
 buttonGen.onclick = function () {
-  randomInfinitive = verbs.map((element) => element.infinitive)[
+  randomElement = verbs.map((element) => element)[
     Math.floor(Math.random() * verbs.length)
   ];
+  randomInfinitive = randomElement.infinitive;
   infinitiveDisplay.innerHTML = randomInfinitive;
   message.innerHTML = "";
   userInput.value = "";
   userInput2.value = "";
 };
+
+// function genQuestion() {
+//   randomElement = verbs.map((element) => element)[
+//     Math.floor(Math.random() * verbs.length)
+//   ];
+//   randomInfinitive = randomElement.infinitive;
+//   infinitiveDisplay.innerHTML = randomInfinitive;
+//   message.innerHTML = "";
+//   userInput.value = "";
+//   userInput2.value = "";
+// };
 
   // Show Answer Function
   // buttonShow.onclick = function() {
@@ -59,6 +72,19 @@ buttonCheck.onclick = function () {
   if (userInput.value.trim().toLowerCase() === correctAnswer) {
     if (userInput2.value.trim().toLowerCase() === correctAnswer2) {
       message.innerHTML = "Correct!";
+      // ДОРАБОТАТЬ АВТОГЕНЕРАЦИЮ ИНФИНИТИВА В СЛУЧАЕ ПРАВИЛЬНО ОТВЕТА, С ВЫДЕРЖКОЙ ВРЕМЕНИ
+      verbs.splice(verbs.indexOf(randomElement), 1);
+      setTimeout(() => {
+        randomElement = verbs.map((element) => element)[
+          Math.floor(Math.random() * verbs.length)
+        ];
+        randomInfinitive = randomElement.infinitive;
+        infinitiveDisplay.innerHTML = randomInfinitive;
+        message.innerHTML = "";
+        userInput.value = "";
+        userInput2.value = "";
+    }, 1500)
+      // genQuestion();
     } else {
       message.innerHTML = "Wrong!";
     }
