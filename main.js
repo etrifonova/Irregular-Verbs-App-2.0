@@ -17,16 +17,16 @@ let showBlock = document.querySelector(".out-3");
 
 select.onchange = function () {
   let x = formid.ddlselect[formid.ddlselect.selectedIndex].value;
-  document.querySelector('.select__category').innerHTML=("выбранная категория: " + formid.ddlselect[formid.ddlselect.selectedIndex].text);
+  document.querySelector('.select__category').innerHTML=("category: " + formid.ddlselect[formid.ddlselect.selectedIndex].text);
   switch(x) {
     case 'part1':
       verbs = BASIC_VERBS;
-      verbsLeft.innerHTML = ("осталось глаголов: " + verbs.length);
+      verbsLeft.innerHTML = ("verbs left: " + verbs.length);
       break;
   
     case 'part2':
       verbs = INTERMEDIATE_VERBS;
-      verbsLeft.innerHTML = ("осталось глаголов: " + verbs.length);
+      verbsLeft.innerHTML = ("verbs left: " + verbs.length);
       break;
   
     default:
@@ -64,7 +64,7 @@ buttonCheck.onclick = function () {
     if (userInput2.value.trim().toLowerCase() === correctAnswer2) {
       message.innerHTML = "Correct!";
       verbs.splice(verbs.indexOf(randomElement), 1);
-      verbsLeft.innerHTML = ("осталось глаголов: " + verbs.length);
+      verbsLeft.innerHTML = ("verbs left: " + verbs.length);
       setTimeout(() => {
         randomElement = verbs.map((element) => element)[
           Math.floor(Math.random() * verbs.length)
