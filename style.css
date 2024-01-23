@@ -63,7 +63,7 @@ body {
   border-radius: 5px;
 }
 
-#lblmess {
+.select__category, .select__verbs-left {
   min-height: 2rem;
   font-size: 0.8rem;
   font-family: inherit;
@@ -120,7 +120,7 @@ option {
   border-radius: 5px;
 }
 
-.generate, .show-button {
+.generate {
   margin-top: 1rem;
 }
 
@@ -166,7 +166,11 @@ option {
     min-width: 370px;
   }
 
-  .grid-container {
+  .grid-container:not(.psimple-form) {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .psimple-form {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -203,6 +207,11 @@ option {
     margin-top: 10px;
     margin-bottom: -10px;
     font-size: 1.25rem;
+  }
+
+  .out-3 {
+    min-height: 80px;
+    align-items: flex-start;
   }
 }
 

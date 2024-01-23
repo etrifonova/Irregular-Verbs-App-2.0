@@ -21,9 +21,13 @@
           </form>
         </div>
         <div>
-          <label id="lblmess">выбранная категория:</label>
+          <label class="select__category">выбранная категория:</label>
+        </div>
+        <div>
+          <label class="select__verbs-left">осталось глаголов:</label>
         </div>
       </div>
+
       <div class="grid-container">
         <div class="title">Infinitive:</div>
         <div class="out-block out-1"></div>
@@ -60,14 +64,12 @@
         <div class="out-block out-2"></div>
       </div>
 
-      <!-- <div class="bottom-block-item show-answer-block">
-        <button
-          class="show-button button bottom-block-item-title"
-        >
-          Показать
-        </button>
-        <div class="show-answer-block-result"></div>
-      </div> -->
+      <div class="show-block grid-container">
+        <div class="button-container">
+          <button class="show-button button">ответ</button>
+        </div>
+        <div class="out-block out-3"></div>
+      </div>
     </section>
   </body>
   <script src="./verbs.js" type="module"></script>
